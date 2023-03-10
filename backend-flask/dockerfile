@@ -1,0 +1,20 @@
+FROM python:3.10-slim-buster
+
+# inside the container
+# If the WORKDIR command is not written in the Dockerfile, it will automatically be created 
+# by the Docker compiler. Hence, it can be said that the command performs mkdir and cd implicitly.
+WORKDIR /backend-flask
+
+# copy from outside the container to inside the container
+COPY requirements.txt requirements.txt
+
+RUN pip3 install -r requirements.txt
+
+# copy everything in the current directory - is it recursive?
+# does this mean copying requirements.txt again? 
+COPY . .
+
+ENV FLASK_ENV=development
+
+EXPOSE ${PORT}
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
