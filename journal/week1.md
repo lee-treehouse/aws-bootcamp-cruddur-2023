@@ -35,3 +35,11 @@ so easy to exec into running container
 https://code.visualstudio.com/docs/remote/ssh
 
 running docker compose up by right clicking on docker compose file (does not run detached tho)
+
+TODO:
+
+homework tasks I'd like to do
+
+Use multi-stage building for a Dockerfile build
+Implement a healthcheck in the V3 Docker compose file
+Launch an EC2 instance that has docker installed, and pull a container to demonstrate you can run your own docker processes.
