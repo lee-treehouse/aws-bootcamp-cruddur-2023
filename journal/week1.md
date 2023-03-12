@@ -16,6 +16,13 @@ Yes
 
 Ok, next steps are going to involve setting up the db and go beyond what was in the first video.
 
+added postgres and dynamodb entries to docker compose file
+
+created gitignore file and added docker folder, .DS_Store
+
+installed postgresql client with home brew
+Installed SQLTools extension and connected to local database
+
 interesting things
 -t name
 resolves to -t name:latest
