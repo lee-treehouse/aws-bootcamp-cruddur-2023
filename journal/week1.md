@@ -23,7 +23,10 @@ created gitignore file and added docker folder, .DS_Store
 installed postgresql client with home brew
 Installed SQLTools extension and connected to local database
 
-interesting things
+Modified open API spec to add notifications endpoint
+implemented backend of notifications endpoint and tested at http://localhost:4567/api/activities/notifications
+
+**interesting things**
 -t name
 resolves to -t name:latest
 so latest is like the default tag
@@ -36,7 +39,7 @@ https://code.visualstudio.com/docs/remote/ssh
 
 running docker compose up by right clicking on docker compose file (does not run detached tho)
 
-TODO:
+**TODO:**
 
 homework tasks I'd like to do
 
