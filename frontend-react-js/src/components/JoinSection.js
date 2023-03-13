@@ -1,5 +1,5 @@
 import "./JoinSection.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function JoinSection(props) {
   return (

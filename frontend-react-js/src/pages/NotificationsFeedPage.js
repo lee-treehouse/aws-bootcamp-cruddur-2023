@@ -57,9 +57,17 @@ export default function NotificationsFeedPage() {
 
   return (
     <article>
-      <DesktopNavigation user={user} active={"notifications"} setPopped={setPopped} />
+      <DesktopNavigation
+        user={user}
+        active={"notifications"}
+        setPopped={setPopped}
+      />
       <div className="content">
-        <ActivityForm popped={popped} setPopped={setPopped} setActivities={setActivities} />
+        <ActivityForm
+          popped={popped}
+          setPopped={setPopped}
+          setActivities={setActivities}
+        />
         <ReplyForm
           activity={replyActivity}
           popped={poppedReply}
