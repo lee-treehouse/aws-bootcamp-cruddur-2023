@@ -14,3 +14,4 @@ Honeycomb first
 10. good conversation about using slim base image for prod, but fully featured base image for local dev for debugging, etc
 11. my esampole is not working, but we could exec into the container to look at env and i can see this format looks weird - is it right?
     `OTEL_EXPORTER_OTLP_HEADERS=x-honeycomb-team=19MaB4JbQBrWmMBNTfqNuC`
+12. interesting part of video around 1:07 where we use SimpleSpanProcessor, ConsoleSpanExporter to debug why no data is being received at honeycomb
