@@ -25,6 +25,10 @@ Installed SQLTools extension and connected to local database
 
 Modified open API spec to add notifications endpoint
 implemented backend of notifications endpoint and tested at http://localhost:4567/api/activities/notifications
+Changed FRONTEND_URL and BACKEND_URL vars to point to localhost:4567 and 3000
+implemented notifications on frontend by copying and altering the home component
+
+ran prettier on frontend folder with `npx prettier --write .`
 
 **interesting things**
 -t name
