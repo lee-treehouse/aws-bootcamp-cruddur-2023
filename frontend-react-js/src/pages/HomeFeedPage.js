@@ -6,8 +6,10 @@ import DesktopSidebar from "../components/DesktopSidebar";
 import ActivityFeed from "../components/ActivityFeed";
 import ActivityForm from "../components/ActivityForm";
 import ReplyForm from "../components/ReplyForm";
+import {Auth} from "aws-amplify";
 
 // [TODO] Authenication
+// TODO remove this, and check if we need this dependency anywhere else / remove
 import Cookies from "js-cookie";
 
 export default function HomeFeedPage() {
