@@ -1,5 +1,5 @@
 import "./ProfileInfo.css";
-import { ReactComponent as ElipsesIcon } from "./svg/elipses.svg";
+import {ReactComponent as ElipsesIcon} from "./svg/elipses.svg";
 import React from "react";
 
 import {Auth} from "aws-amplify";
@@ -36,12 +36,8 @@ export default function ProfileInfo(props) {
       <div className="profile-info" onClick={click_pop}>
         <div className="profile-avatar"></div>
         <div className="profile-desc">
-          <div className="profile-display-name">
-            {props.user.display_name || "My Name"}
-          </div>
-          <div className="profile-username">
-            @{props.user.handle || "handle"}
-          </div>
+          <div className="profile-display-name">{props.user.display_name || "My Name"}</div>
+          <div className="profile-username">@{props.user.handle || "handle"}</div>
         </div>
         <ElipsesIcon className="icon" />
       </div>
