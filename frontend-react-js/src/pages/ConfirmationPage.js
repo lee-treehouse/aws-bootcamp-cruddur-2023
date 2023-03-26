@@ -44,6 +44,7 @@ export default function ConfirmationPage() {
     setErrors("");
     try {
       await Auth.confirmSignUp(email, code);
+      // TODO email is confirmed but they are not signed in - improve this UX
       window.location.href = "/";
     } catch (error) {
       setErrors(error.message);
