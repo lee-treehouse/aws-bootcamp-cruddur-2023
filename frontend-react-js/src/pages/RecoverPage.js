@@ -29,9 +29,12 @@ export default function RecoverPage() {
     event.preventDefault();
     setErrors("");
     if (password == passwordAgain) {
-      Auth.forgotPasswordSubmit(username, code, password)
-        .then((data) => setFormState("success"))
-        .catch((err) => setErrors(err.message));
+      try {
+        const data = await Auth.forgotPasswordSubmit(username, code, password);
+        setFormState("success");
+      } catch (err) {
+        setErrors(err.message);
+      }
     } else {
       setErrors("Passwords do not match");
     }
