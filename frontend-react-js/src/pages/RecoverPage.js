@@ -62,7 +62,7 @@ export default function RecoverPage() {
   const send_code = () => {
     return (
       <form className="recover_form" onSubmit={onsubmit_send_code}>
-        <h2>Recover your Password</h2>
+        <h2>Reset your Password</h2>
         <div className="fields">
           <div className="field text_field username">
             <label>Email</label>
@@ -80,7 +80,7 @@ export default function RecoverPage() {
   const confirm_code = () => {
     return (
       <form className="recover_form" onSubmit={onsubmit_confirm_code}>
-        <h2>Recover your Password</h2>
+        <h2>Reset your Password</h2>
         <div className="fields">
           <div className="field text_field code">
             <label>Reset Password Code</label>
