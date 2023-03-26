@@ -37,26 +37,26 @@ export default function HomeFeedPage() {
     }
   };
 
-  // TODO: migratit to async await
   // check if we are authenicated
   const checkAuth = async () => {
-    Auth.currentAuthenticatedUser({
-      // Optional, By default is false.
-      // If set to true, this call will send a
-      // request to Cognito to get the latest user data
-      bypassCache: false,
-    })
-      .then((user) => {
-        console.log("user", user);
-        return Auth.currentAuthenticatedUser();
-      })
-      .then((cognito_user) => {
-        setUser({
-          display_name: cognito_user.attributes.name,
-          handle: cognito_user.attributes.preferred_username,
-        });
-      })
-      .catch((err) => console.log(err));
+    try {
+      const user = await Auth.currentAuthenticatedUser({
+        // Optional, By default is false.
+        // If set to true, this call will send a
+        // request to Cognito to get the latest user data
+        bypassCache: false,
+      });
+
+      console.log("user", user);
+      const cognito_user = await Auth.currentAuthenticatedUser();
+
+      setUser({
+        display_name: cognito_user.attributes.name,
+        handle: cognito_user.attributes.preferred_username,
+      });
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   React.useEffect(() => {
