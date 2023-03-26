@@ -42,7 +42,6 @@ provider.add_span_processor(processor2)
 trace.set_tracer_provider(provider)
 tracer = trace.get_tracer(__name__)
 
-
 print("hello lee")
 
 # Initialize automatic instrumentation with Flask
@@ -56,8 +55,8 @@ origins = [frontend, backend]
 cors = CORS(
   app, 
   resources={r"/api/*": {"origins": origins}},
-  expose_headers="location,link",
-  allow_headers="content-type,if-modified-since",
+  headers=['Content-Type', 'Authorization'], 
+  expose_headers='Authorization',
   methods="OPTIONS,GET,HEAD,POST"
 )
 
@@ -98,6 +97,8 @@ def data_create_message():
 
 @app.route("/api/activities/home", methods=['GET'])
 def data_home():
+  print("Authorization Header")
+  print(request.headers.get("Authorization"))
   data = HomeActivities.run()
   return data, 200
 
