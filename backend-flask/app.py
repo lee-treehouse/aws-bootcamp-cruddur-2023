@@ -14,6 +14,8 @@ from services.messages import *
 from services.create_message import *
 from services.show_activity import *
 
+from lib.cognito_jwt_token import CognitoJwtToken, extract_access_token, TokenVerifyError
+
 # app.py updates for honeycomb
 from opentelemetry import trace
 from opentelemetry.instrumentation.flask import FlaskInstrumentor
@@ -38,7 +40,7 @@ provider = TracerProvider()
 processor = BatchSpanProcessor(OTLPSpanExporter())
 processor2 = SimpleSpanProcessor(ConsoleSpanExporter())
 provider.add_span_processor(processor)
-provider.add_span_processor(processor2)
+#provider.add_span_processor(processor2)
 trace.set_tracer_provider(provider)
 tracer = trace.get_tracer(__name__)
 
@@ -48,6 +50,12 @@ print("hello lee")
 app = Flask(__name__)
 FlaskInstrumentor().instrument_app(app)
 RequestsInstrumentor().instrument()
+
+cognito_jwt_token = CognitoJwtToken(
+  user_pool_id=os.getenv("AWS_COGNITO_USER_POOL_ID"), 
+  user_pool_client_id=os.getenv("AWS_COGNITO_USER_POOL_CLIENT_ID"),
+  region=os.getenv("AWS_DEFAULT_REGION")
+)
 
 frontend = os.getenv('FRONTEND_URL')
 backend = os.getenv('BACKEND_URL')
