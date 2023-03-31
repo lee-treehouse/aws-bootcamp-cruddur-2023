@@ -1,0 +1,4 @@
+#! /bin/bash
+aws ec2 modify-security-group-rules \
+    --group-id "$PROD_SECURITY_GROUP_ID" \
+    --security-group-rules "SecurityGroupRuleId=$PROD_SECURITY_GROUP_RULE_ID,SecurityGroupRule={IpProtocol=tcp,FromPort=5432,ToPort=5432,CidrIpv4=$MY_IP/32}"
