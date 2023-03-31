@@ -1,1 +1,7 @@
 #! /bin/bash
+## shellcheck disable=all
+
+SCHEMA_PATH=$(realpath ".")/db/schema.sql 
+echo "$SCHEMA_PATH"
+
+psql "$CONNECTION_URL" < "$SCHEMA_PATH"
