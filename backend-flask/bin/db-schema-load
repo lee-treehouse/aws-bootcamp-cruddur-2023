@@ -1,7 +1,10 @@
 #! /bin/bash
-## shellcheck disable=all
+# shellcheck disable=all
 
-echo "$1"-hello-world
+CYAN='\033[1;36m'
+NO_COLOR='\033[0m'
+LABEL="db-schema-load"
+printf "${CYAN}== ${LABEL}${NO_COLOR}\n"
 
 if [ "$1" = "PROD" ]; then
     echo "USING PROD"
