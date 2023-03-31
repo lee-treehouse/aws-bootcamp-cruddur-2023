@@ -3,8 +3,16 @@
 
 #echo "== db-schema-load"
 
-schema_path="$(realpath .)/db/seed.sql"
+if [ "$1" = "PROD" ]; then
+    echo "USING PROD"
+    CON_URL=$PRODUCTION_CONNECTION_URL
+else
+    echo "USING LOCAL"
+    CON_URL=$CONNECTION_URL
+fi
 
-echo "$schema_path"
+SCHEMA_PATH=$(realpath ".")/db/seed.sql
 
-psql "$CONNECTION_URL" cruddur <"$schema_path"
+echo "$SCHEMA_PATH"
+
+psql "$CON_URL" <"$SCHEMA_PATH"
