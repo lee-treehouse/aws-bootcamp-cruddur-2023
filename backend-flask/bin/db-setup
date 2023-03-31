@@ -1,6 +1,6 @@
 #! /bin/bash
 # shellcheck disable=SC1091
-#-e # stop if it fails at any point
+Set -e # stop if it fails at any point see also https://linuxhint.com/bash-set-e/
 
 bin_path="$(realpath .)/bin/"
 
