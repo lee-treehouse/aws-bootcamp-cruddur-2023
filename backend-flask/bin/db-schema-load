@@ -8,7 +8,7 @@ if [ "$1" = "PROD" ]; then
     CON_URL=$PRODUCTION_CONNECTION_URL
 else
     echo "USING LOCAL"
-    CON_URL=$PRODUCTION_CONNECTION_URL
+    CON_URL=$CONNECTION_URL
 fi
 
 SCHEMA_PATH=$(realpath ".")/db/schema.sql
