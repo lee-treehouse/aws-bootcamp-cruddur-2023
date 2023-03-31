@@ -8,3 +8,6 @@ opentelemetry-instrumentation-requests
 watchtower
 
 flask-AWSCognito
+
+psycopg[binary]
+psycopg[pool]
