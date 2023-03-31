@@ -8,7 +8,7 @@
       "username": "postgres",
       "name": "boot camp",
       "password": "password",
-      "database": "postgres"
+      "database": "cruddur"
     }
   ]
 }
