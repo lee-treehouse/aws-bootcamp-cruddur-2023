@@ -1,7 +1,17 @@
 #! /bin/bash
 ## shellcheck disable=all
 
-SCHEMA_PATH=$(realpath ".")/db/schema.sql 
+echo "$1"-hello-world
+
+if [ "$1" = "PROD" ]; then
+    echo "USING PROD"
+    CON_URL=$PRODUCTION_CONNECTION_URL
+else
+    echo "USING LOCAL"
+    CON_URL=$PRODUCTION_CONNECTION_URL
+fi
+
+SCHEMA_PATH=$(realpath ".")/db/schema.sql
 echo "$SCHEMA_PATH"
 
-psql "$CONNECTION_URL" < "$SCHEMA_PATH"
+psql "$CON_URL" <"$SCHEMA_PATH"
