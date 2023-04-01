@@ -70,6 +70,7 @@ class Db:
 
     # when we want to return a json object
     def query_array_json(self, sql, params={}):
+        print("yoo hoo")
         self.print_sql("array", sql)
 
         wrapped_sql = self.query_wrap_array(sql)
