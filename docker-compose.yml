@@ -12,7 +12,7 @@ services:
       AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
       AWS_COGNITO_USER_POOL_ID: "ap-southeast-2_kuTElgT47"
       AWS_COGNITO_USER_POOL_CLIENT_ID: "21u7cgurmcd7jd3er5bfj5s394"
-      CONNECTION_URL: ${CONNECTION_URL}
+      CONNECTION_URL: ${PRODUCTION_CONNECTION_URL}
     build: ./backend-flask
     ports:
       - "4567:4567"
