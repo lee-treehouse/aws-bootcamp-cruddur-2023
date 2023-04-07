@@ -47,6 +47,7 @@ def get_user_uuids():
     return results
 
 
+# this method does a put
 def create_message_group(
     client,
     message_group_uuid,
@@ -72,6 +73,7 @@ def create_message_group(
     print(response)
 
 
+# this method does a put
 def create_message(
     client,
     message_group_uuid,
@@ -101,6 +103,8 @@ message_group_uuid = "5ae290ed-55d1-47a0-bc6d-fe2bc2700399"
 now = datetime.now(timezone.utc).astimezone()
 users = get_user_uuids()
 
+# this message group is from my user's point of view
+# make it with a filler message and then it will get updated?
 create_message_group(
     client=ddb,
     message_group_uuid=message_group_uuid,
@@ -112,6 +116,8 @@ create_message_group(
     message="this is a filler message",
 )
 
+# this message group is from the other user's point of view
+# make it with a filler message and then it will get updated?
 create_message_group(
     client=ddb,
     message_group_uuid=message_group_uuid,

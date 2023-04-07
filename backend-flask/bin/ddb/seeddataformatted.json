@@ -1,0 +1,956 @@
+[
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "message_group_uuid": "5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:23:49.217420+10:00",
+    "pk": "GRP#9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "message": "this is a filler message",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "message_group_uuid": "5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:23:49.217420+10:00",
+    "pk": "GRP#2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "message": "this is a filler message",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:23:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "af01904b-0196-40b4-b534-eab92b2249ec",
+    "message": "Have you ever watched Babylon 5? It's one of my favorite TV shows!",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:24:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "200c0adc-b8d1-47bf-9c92-f694a6b7fdb4",
+    "message": "Yes, I have! I love it too. What's your favorite season?",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:25:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "1f2b3251-0b9b-47fa-9560-7d24afde793a",
+    "message": "I think my favorite season has to be season 3. So many great episodes, like \"Severed Dreams\" and \"War Without End.\"",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:26:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "a6aec4f5-df18-48d6-852f-91c09cc7adb0",
+    "message": "Yeah, season 3 was amazing! I also loved season 4, especially with the Shadow War heating up and the introduction of the White Star.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:27:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "dc0036f8-b9d2-49ba-847b-66f9e0f1270f",
+    "message": "Agreed, season 4 was really great as well. I was so glad they got to wrap up the storylines with the Shadows and the Vorlons in that season.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:28:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "05ab77e4-6761-4247-b151-f5511157dcb9",
+    "message": "Definitely. What about your favorite character? Mine is probably Londo Mollari.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:29:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "e8ca8527-320e-47ff-8e9d-f6a15f38dfa2",
+    "message": "Londo is great! My favorite character is probably G'Kar. I loved his character development throughout the series.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:30:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "a527ce34-3eea-4693-9962-56bdda6bf80f",
+    "message": "G'Kar was definitely a standout character. I also really liked Delenn's character arc and how she grew throughout the series.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:31:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "623fc097-8dcc-4bff-8701-e4c0ee219a4d",
+    "message": "Delenn was amazing too, especially with her role in the Minbari Civil War and her relationship with Sheridan. Speaking of which, what did you think of the Sheridan character?",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:32:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "dcafb0d7-4854-4612-ac7e-089b0aaaaa09",
+    "message": "I thought Sheridan was a great protagonist. He was a strong leader and had a lot of integrity. And his relationship with Delenn was so well-done.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:33:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "db45d821-6f87-4a55-bbd9-39b55d21124a",
+    "message": "I totally agree! I also really liked the dynamic between Garibaldi and Bester. Those two had some great scenes together.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:34:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "889e2b54-feec-4172-83a8-9cf7d2d67a67",
+    "message": "Yes! Their interactions were always so intense and intriguing. And speaking of intense scenes, what did you think of the episode \"Intersections in Real Time\"?",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:35:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "bec17b44-a6e2-4bb9-818e-4d4730a8a91b",
+    "message": "Oh man, that episode was intense. It was so well-done, but I could barely watch it. It was just too much.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:36:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "807267df-0e39-4f70-a4c5-2ca39937ee0e",
+    "message": "Yeah, it was definitely hard to watch. But it was also one of the best episodes of the series in my opinion.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:37:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "ccd52308-bbd5-4c4d-953d-6e929d6ba6ee",
+    "message": "Absolutely. Babylon 5 had so many great episodes like that. Do you have a favorite standalone episode?",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:38:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "8e695081-98e8-4944-88f9-1ae13c6ed0ff",
+    "message": "Hmm, that's a tough one. I really loved \"The Coming of Shadows\" in season 2, but \"A Voice in the Wilderness\" in season 1 was also great. What about you?",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:39:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "a2a4b196-ffe3-4f0f-a49b-cad11d8087ba",
+    "message": "I think my favorite standalone episode might be \"The Long Twilight Struggle\" in season 2. It had some great moments with G'Kar and Londo.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:40:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "a4f623e6-3961-459d-8281-499344e5aa4d",
+    "message": "Yes, \"The Long Twilight Struggle\" was definitely a standout episode. Babylon 5 really had so many great episodes and moments throughout its run.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:41:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "c7077532-cb4b-4695-bb70-c5e166ee5441",
+    "message": "Definitely. It's a shame it ended after only five seasons, but I'm glad we got the closure we did with the series finale.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:42:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "614aec4b-9bb6-4f27-8e63-0bb178077b30",
+    "message": "Yeah, the series finale was really well-done. It tied up a lot of loose ends and left us with a great sense of closure.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:43:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "6a593dd4-828e-44ad-b9a1-364b750da6b4",
+    "message": "It really did. Overall, Babylon 5 is just such a great show with fantastic characters, writing, and world-building.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:44:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "1f975ee3-cb97-4242-8cde-68f2654f1434",
+    "message": "Agreed. It's one of my favorite sci-fi shows of all time and I'm always happy to revisit it.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:45:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "593a5ab4-bb86-49f1-b367-7f7a9f20f7a4",
+    "message": "Same here. I think one of the things that makes Babylon 5 so special is its emphasis on politics and diplomacy. It's not just a show about space battles and aliens, but about the complex relationships between different species and their political maneuvering.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:46:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "dba298b9-faf0-4d8d-b741-4b47a66a578d",
+    "message": "Yes, that's definitely one of the show's strengths. And it's not just about big-picture politics, but also about personal relationships and the choices characters make.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:47:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "9288a83a-6e68-4ec7-bec1-f0473719b79d",
+    "message": "Exactly. I love how Babylon 5 explores themes of redemption, forgiveness, and sacrifice. Characters like G'Kar and Londo have such compelling arcs that are driven by their choices and actions.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:48:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "67362767-37e5-4e47-8fa2-3df040f63bd0",
+    "message": "Yes, the character development in Babylon 5 is really top-notch. Even minor characters like Vir and Franklin get their moments to shine and grow over the course of the series.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:49:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "ae6e8e79-ab48-46a5-b0e6-9f32ba0f99ef",
+    "message": "I couldn't agree more. And the way the show handles its themes is so nuanced and thought-provoking. For example, the idea of \"the one\" and how it's used by different characters in different ways.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:50:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "2cd5f779-ee20-4a5b-9030-336363631d68",
+    "message": "Yes, that's a really interesting theme to explore. And it's not just a one-dimensional concept, but something that's explored in different contexts and with different characters.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:51:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "8330af4f-6898-4467-9a13-36fc8fc0cf16",
+    "message": "And the show also does a great job of balancing humor and drama. There are so many funny moments in the show, but it never detracts from the serious themes and the high stakes.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:52:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "a17d00bc-dcdd-4b3a-95b2-e6b2265cb9fa",
+    "message": "Absolutely. The humor is always organic and never feels forced. And the show isn't afraid to go dark when it needs to, like in \"Intersections in Real Time\" or the episode \"Sleeping in Light.\"",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:53:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "35ea3dd6-d190-4e30-821d-91b5ff77a0af",
+    "message": "Yeah, those episodes are definitely tough to watch, but they're also some of the most powerful and memorable episodes of the series. And it's not just the writing that's great, but also the acting and the production values.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:54:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "5e082381-95e9-4009-9f2e-304a833ad271",
+    "message": "Yes, the acting is fantastic across the board. From Bruce Boxleitner's performance as Sheridan to Peter Jurasik's portrayal of Londo, every actor brings their A-game. And the production design and special effects are really impressive for a TV show from the 90s.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:55:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "ab3a7886-a2c1-442e-9726-4d99d4e6a15f",
+    "message": "Definitely. Babylon 5 was really ahead of its time in terms of its visuals and special effects. And the fact that it was all done on a TV budget makes it even more impressive.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:56:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "c3938685-6790-4fdf-b547-f3d6361342e6",
+    "message": "Yeah, it's amazing what they were able to accomplish with the limited resources they had. It just goes to show how talented the people behind the show were.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:57:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "5bdffadc-a73d-4731-b00d-31cc4828355c",
+    "message": "Agreed. It's no wonder that Babylon 5 has such a devoted fanbase, even all these years later. It's just such a well-crafted and timeless show.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T15:58:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "0023b1b1-b006-473d-aea9-63cfc7ae5e38",
+    "message": "Absolutely. I'm glad we can still appreciate it and talk about it all these years later. It really is a show that stands the test of time.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T15:59:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "a0473a5f-14b0-4bb2-9fbc-892cb3276d74",
+    "message": "One thing I really appreciate about Babylon 5 is how it handles diversity and representation. It has a really diverse cast of characters from different species and backgrounds, and it doesn't shy away from exploring issues of prejudice and discrimination.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:00:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "d2b0657c-a421-4e5c-b4f9-bf7f7f08c7cc",
+    "message": "Yes, that's a great point. The show was really ahead of its time in terms of its diverse cast and the way it tackled issues of race, gender, and sexuality. And it did so in a way that felt natural and integrated into the story.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:01:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "934a1f19-f7e1-44a5-bdfc-4e5b7497fea0",
+    "message": "Definitely. It's great to see a show that's not afraid to tackle these issues head-on and address them in a thoughtful and nuanced way. And it's not just about representation, but also about exploring different cultures and ways of life.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:02:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "997cf8b0-8035-4b60-91ea-b99135d9c277",
+    "message": "Yes, the show does a great job of world-building and creating distinct cultures for each of the species. And it's not just about their physical appearance, but also about their customs, beliefs, and values.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:03:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "281b747a-e3f9-4c4b-a083-c6a346a8a506",
+    "message": "Absolutely. It's one of the things that sets Babylon 5 apart from other sci-fi shows. The attention to detail and the thought that went into creating this universe is really impressive.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:04:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "f1401639-c695-4871-bb36-3ed623a5ba9e",
+    "message": "And it's not just the aliens that are well-developed, but also the human characters. The show explores the different factions and political ideologies within EarthGov, as well as the different cultures and traditions on Earth.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:05:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "5cdd11d1-2b51-4184-94d1-e94f3456573f",
+    "message": "Yes, that's another great aspect of the show. It's not just about the conflicts between different species, but also about the internal struggles within humanity. And it's all tied together by the overarching plot of the Shadow War and the fate of the galaxy.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:06:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "d8b71d01-7ada-4992-bc72-2777eb42f547",
+    "message": "Definitely. The show does a great job of balancing the episodic stories with the larger arc, so that every episode feels important and contributes to the overall narrative.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:07:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "7f774f10-c92f-4e97-bf03-80d6ceaa242b",
+    "message": "And the show is also great at building up tension and suspense. The slow burn of the Shadow War and the mystery of the Vorlons and the Shadows kept me on the edge of my seat throughout the series.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:08:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "08ba7051-0a58-48a8-815f-fb76e5d3cbd9",
+    "message": "Yes, the show is really good at building up anticipation and delivering satisfying payoffs. Whether it's the resolution of a character arc or the climax of a season-long plotline, Babylon 5 always delivers.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:09:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "f1167589-2c9e-44f7-90c8-aa32ae6e26a5",
+    "message": "Agreed. It's just such a well-crafted and satisfying show, with so many memorable moments and characters. I'm really glad we got to talk about it today.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:10:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "dc9227c4-af3f-4004-b6fa-53fb25f1c6b3",
+    "message": "Me too. It's always great to geek out about Babylon 5 with someone who appreciates it as much as I do!",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:11:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "bb1dd5c8-6a06-4cb7-a743-3c7fb8a622c9",
+    "message": "Yeah, it's always fun to discuss our favorite moments and characters from the show. And there are so many great moments to choose from!",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:12:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "03f54752-0f15-4406-97dd-2a31590cbd87",
+    "message": "Definitely. I think one of the most memorable moments for me was the \"goodbye\" scene between G'Kar and Londo in the episode \"Objects at Rest.\" It was such a poignant and emotional moment, and it really showed how far their characters had come.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:13:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "a31e743e-6b4f-437e-b6b3-720bf6b6988d",
+    "message": "Yes, that was a really powerful scene. It was great to see these two former enemies come together and find common ground. And it was a great way to wrap up their character arcs.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:14:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "4039a583-e54e-44cf-a93e-51fadc9f2ebe",
+    "message": "Another memorable moment for me was the speech that Sheridan gives in \"Severed Dreams.\" It's such an iconic moment in the show, and it really encapsulates the themes of the series.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:15:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "bab2554e-4bcf-4831-a2d3-ceb9d9776df4",
+    "message": "Yes, that speech is definitely one of the highlights of the series. It's so well-written and well-delivered, and it really captures the sense of hope and defiance that the show is all about.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:16:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "4503bc61-bf73-4aae-968d-ec24d9d6f6f6",
+    "message": "And speaking of great speeches, what did you think of the \"Ivanova is always right\" speech from \"Moments of Transition\"?",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:17:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "6694de66-5b87-4218-97ed-cb3dff235605",
+    "message": "Oh man, that speech gives me chills every time I watch it. It's such a powerful moment for Ivanova, and it really shows her strength and determination as a leader.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:18:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "b00acd6a-fe5e-4857-8505-0621a53f2d32",
+    "message": "Yes, that speech is definitely a standout moment for Ivanova's character. And it's just one example of the great writing and character development in the show.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:19:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "4a2e7592-8ab2-4afd-9ddf-59167c735de7",
+    "message": "Absolutely. It's a testament to the talent of the writers and actors that they were able to create such rich and complex characters with so much depth and nuance.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:20:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "af7a802c-7ad1-4667-b82d-48cc479902f8",
+    "message": "And it's not just the main characters that are well-developed, but also the supporting characters like Marcus, Zack, and Lyta. They all have their own stories and struggles, and they all contribute to the larger narrative in meaningful ways.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:21:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "9281c482-ff42-4340-b177-d335e8e26317",
+    "message": "Definitely. Babylon 5 is just such a well-rounded and satisfying show in every way. It's no wonder that it's still beloved by fans all these years later.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:22:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "d882b9fb-6be7-493d-84ee-746870d2483a",
+    "message": "Agreed. It's a show that has stood the test of time, and it will always hold a special place in my heart as one of my favorite TV shows of all time.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:23:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "fe9a3171-b90c-49ef-bb74-baa7b1c96a31",
+    "message": "One of the most interesting ethical dilemmas presented in Babylon 5 is the treatment of the Narn by the Centauri. What do you think about that storyline?",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:24:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "f64be30d-8cc3-43c1-9cac-feeb43b752ff",
+    "message": "Yeah, it's definitely a difficult issue to grapple with. On the one hand, the Centauri were portrayed as the aggressors, and their treatment of the Narn was brutal and unjust. But on the other hand, the show also presented some nuance to the situation, with characters like Londo and Vir struggling with their own complicity in the conflict.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:25:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "4bb209dd-1a5e-4f6b-ac8c-8c3b0853e23d",
+    "message": "Exactly. I think one of the strengths of the show is its willingness to explore complex ethical issues like this. It's not just about good guys versus bad guys, but about the shades of grey in between.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:26:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "110e712e-759e-4847-b700-ba16fae170dd",
+    "message": "Yeah, and it raises interesting questions about power and oppression. The Centauri had more advanced technology and military might than the Narn, which allowed them to dominate and subjugate the Narn people. But at the same time, there were also political and economic factors at play that contributed to the conflict.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:27:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "fbae920b-7d12-4e05-b79d-824e9e7cb00d",
+    "message": "And it's not just about the actions of the Centauri government, but also about the actions of individual characters. Londo, for example, was initially portrayed as a somewhat sympathetic character, but as the series progressed, we saw how his choices and actions contributed to the suffering of the Narn people.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:28:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "247d8034-1f7d-403a-85ab-98ac9e407f54",
+    "message": "Yes, and that raises interesting questions about personal responsibility and accountability. Can an individual be held responsible for the actions of their government or their society? And if so, to what extent?",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:29:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "51f912df-ad04-412a-9b4d-7a6fa6665ac2",
+    "message": "That's a really good point. And it's also interesting to consider the role of empathy and compassion in situations like this. Characters like G'Kar and Delenn showed compassion towards the Narn people and fought against their oppression, while others like Londo and Cartagia were more indifferent or even sadistic in their treatment of the Narn.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:30:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "ef09ba6e-57ff-4ec8-822b-90a5d7a7d1e4",
+    "message": "Yeah, and that raises the question of whether empathy and compassion are innate traits, or whether they can be cultivated through education and exposure to different cultures and perspectives.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:31:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "33addbf4-2794-4fca-afb4-f1157dd5f0ba",
+    "message": "Definitely. And it's also worth considering the role of forgiveness and reconciliation. The Narn and Centauri eventually came to a sort of reconciliation in the aftermath of the Shadow War, but it was a difficult and painful process that required a lot of sacrifice and forgiveness on both sides.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:32:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "f5effed0-d6bc-46c9-8d35-b2fe39c92f9a",
+    "message": "Yes, and that raises the question of whether forgiveness is always possible or appropriate in situations of oppression and injustice. Can the victims of such oppression ever truly forgive their oppressors, or is that too much to ask?",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:33:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "8de604ce-40e1-488b-a9a6-c7867a82431a",
+    "message": "It's a tough question to answer. I think the show presents a hopeful message in the end, with characters like G'Kar and Londo finding a measure of redemption and reconciliation. But it's also clear that the scars of the conflict run deep and that healing takes time and effort.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:34:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "a29fbf2f-9dd6-4e66-83e5-81d7c4459400",
+    "message": "Yeah, that's a good point. Ultimately, I think the show's treatment of the Narn-Centauri conflict raises more questions than it answers, which is a testament to its complexity and nuance. It's a difficult issue to grapple with, but one that's worth exploring and discussing.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:35:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "6785fbe4-0cba-4762-b028-71438c63daef",
+    "message": "Let's switch gears a bit and talk about the character of Natasha Alexander. What did you think about her role in the series?",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:36:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "60184e4a-2b25-4f74-9b72-a12d6879f44e",
+    "message": "I thought Natasha Alexander was a really interesting character. She was a tough and competent security officer, but she also had a vulnerable side and a complicated past.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:37:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "d3f76160-81b9-4565-bf95-d2056af0710c",
+    "message": "Yeah, I agree. I think she added a lot of depth to the show and was a great foil to characters like Garibaldi and Zack.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:38:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "944b3101-e8de-47c7-8d8b-b654ba880ba4",
+    "message": "And I also appreciated the way the show handled her relationship with Garibaldi. It was clear that they had a history and a lot of unresolved tension, but the show never made it too melodramatic or over-the-top.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:39:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "b51bb46c-896e-4321-babf-873a338bfd00",
+    "message": "That's a good point. I think the show did a good job of balancing the personal drama with the larger political and sci-fi elements. And it was refreshing to see a female character who was just as tough and competent as the male characters.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:40:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "c5ef5678-5fba-4e33-824e-fe12f9cb176a",
+    "message": "Definitely. I think Natasha Alexander was a great example of a well-written and well-rounded female character. She wasn't just there to be eye candy or a love interest, but had her own story and agency.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:41:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "1b56c23e-0caf-4499-9dfe-36e00beb0be4",
+    "message": "However, I did feel like the show could have done more with her character. She was introduced fairly late in the series, and didn't have as much screen time as some of the other characters.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:42:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "1a86a89d-1d5f-4685-9920-59861602b918",
+    "message": "That's true. I think the show had a lot of characters to juggle, and sometimes that meant some characters got sidelined or didn't get as much development as they deserved.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:43:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "8d83b45c-d1ce-46e7-aca4-832ef50d8a61",
+    "message": "And I also thought that her storyline with Garibaldi could have been developed a bit more. They had a lot of history and tension between them, but it felt like it was resolved too quickly and neatly.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:44:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "22973ef8-b778-4bfa-90c6-db166926a3c7",
+    "message": "I can see where you're coming from, but I also appreciated the way the show didn't drag out the drama unnecessarily. It was clear that they both had feelings for each other, but they also had to focus on their jobs and the larger conflicts at play.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:45:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "850bf89d-1020-4d6a-a649-9157532386d1",
+    "message": "I can see that perspective as well. Overall, I think Natasha Alexander was a great addition to the show and added a lot of value to the series. It's a shame we didn't get to see more of her.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:46:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "bb96f087-702f-4044-a73b-e01b39de1cb0",
+    "message": "Agreed. But at least the show was able to give her a satisfying arc and resolution in the end. And that's a testament to the show's strength as a whole.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:47:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "ac2c72d5-b76d-4c36-aba8-1e132ab8999f",
+    "message": "One thing that really stands out about Babylon 5 is the quality of the special effects. What did you think about the show's use of CGI and other visual effects?",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:48:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "a6e14daa-196f-4dfd-9cfc-51b613165863",
+    "message": "I thought the special effects in Babylon 5 were really impressive, especially for a show that aired in the 90s. The use of CGI to create the spaceships and other sci-fi elements was really innovative for its time.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:49:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "22e3dd78-e6e2-4401-be36-e208bbb6e86a",
+    "message": "Yes, I was really blown away by the level of detail and realism in the effects. The ships looked so sleek and futuristic, and the space battles were really intense and exciting.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:50:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "d6b23a67-7af4-4c06-b7c3-cda7eb519553",
+    "message": "And I also appreciated the way the show integrated the visual effects with the live-action footage. It never felt like the effects were taking over or overshadowing the characters or the story.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:51:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "5fd636d5-c5df-4296-812c-0f370e963aad",
+    "message": "Absolutely. The show had a great balance of practical effects and CGI, which helped to ground the sci-fi elements in a more tangible and realistic world.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:52:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "c69ddb08-35d0-42e0-b531-24d5d338d305",
+    "message": "And it's also worth noting the way the show's use of visual effects evolved over the course of the series. The effects in the first season were a bit rough around the edges, but by the end of the series, they had really refined and perfected the look and feel of the show.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:53:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "bdb8b261-1e54-4344-bb70-5e8afef275c2",
+    "message": "Yes, I agree. And it's impressive how they were able to accomplish all of this on a TV budget. The fact that the show was able to create such a rich and immersive sci-fi universe with limited resources is a testament to the talent and creativity of the production team.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:54:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "729a3bd3-75d6-4bb9-8195-691d1ab346c4",
+    "message": "Definitely. And it's one of the reasons why the show has aged so well. Even today, the visual effects still hold up and look impressive, which is a rarity for a show that's almost 30 years old.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:55:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "c17dc885-3d0a-4790-8623-3a230ceaf43b",
+    "message": "Agreed. And it's also worth noting the way the show's use of visual effects influenced other sci-fi shows that came after it. Babylon 5 really set the bar for what was possible in terms of sci-fi visuals on TV.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:56:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "770fbbef-cb25-4eb6-a0f8-d2d0f6d800d7",
+    "message": "Yes, it definitely had a big impact on the genre as a whole. And it's a great example of how innovative and groundbreaking sci-fi can be when it's done right.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:57:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "11478f7d-eb9f-422b-8665-921b916948d0",
+    "message": "Another character I wanted to discuss is Zathras. What did you think of his character?",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T16:58:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "26f0f9cb-248b-474d-a413-4cad0ff1b825",
+    "message": "Zathras was a really unique and memorable character. He was quirky and eccentric, but also had a lot of heart and sincerity.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T16:59:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "923a1849-b670-48f5-ad67-122be1b90472",
+    "message": "Yes, I thought he was a great addition to the show. He added some much-needed comic relief, but also had some important moments of character development.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T17:00:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "8bc3fccf-e917-4f16-918c-b2be0a723dd0",
+    "message": "And I appreciated the way the show used him as a sort of plot device, with his knowledge of time and space being instrumental in the resolution of some of the show's major storylines.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T17:01:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "f17a819a-297e-459f-b7c6-08a3144b4e1c",
+    "message": "Definitely. It was a great way to integrate a seemingly minor character into the larger narrative. And it was also interesting to see the different versions of Zathras from different points in time.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T17:02:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "6a9540fd-b569-4410-8b0f-50aede661dcb",
+    "message": "Yeah, that was a clever storytelling device that really added to the sci-fi elements of the show. And it was also a great showcase for actor Tim Choate, who played the character with so much charm and energy.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T17:03:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "78c11a2a-c626-4262-bd3e-a67cdca21fb6",
+    "message": "I also thought that Zathras was a great example of the show's commitment to creating memorable and unique characters. Even characters that only appeared in a few episodes, like Zathras or Bester, were given distinct personalities and backstories.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T17:04:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "d79083aa-d0ad-4835-843a-b96588cf8f41",
+    "message": "Yes, that's a good point. Babylon 5 was really great at creating a diverse and interesting cast of characters, with each one feeling like a fully-realized and distinct individual.",
+    "user_display_name": "Andrew Bayko"
+  },
+  {
+    "user_uuid": "9dbce2ad-ee75-4439-8c84-81d787fb00f4",
+    "user_handle": "andrewbrown",
+    "sk": "2023-04-07T17:05:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "8a00e67b-3d44-4582-9fc5-e7beb7a66576",
+    "message": "And Zathras was just one example of that. He was a small but important part of the show's legacy, and he's still remembered fondly by fans today.",
+    "user_display_name": "Andrew Brown"
+  },
+  {
+    "user_uuid": "2d2c3ba6-3c39-4ef1-9f19-6b01d45627c8",
+    "user_handle": "bayko",
+    "sk": "2023-04-07T17:06:49.217420+10:00",
+    "pk": "MSG#5ae290ed-55d1-47a0-bc6d-fe2bc2700399",
+    "message_uuid": "70ab1896-cf46-4502-8650-4eec77ef1ce8",
+    "message": "Definitely. I think his character is a great example of the show's ability to balance humor and heart, and to create memorable and beloved characters that fans will cherish for years to come.",
+    "user_display_name": "Andrew Bayko"
+  }
+]
