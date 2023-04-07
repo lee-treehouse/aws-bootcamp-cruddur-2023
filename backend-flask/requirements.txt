@@ -10,4 +10,6 @@ watchtower
 flask-AWSCognito
 
 psycopg[binary]
-psycopg[pool]Boto3
+psycopg[pool]
+
+Boto3
