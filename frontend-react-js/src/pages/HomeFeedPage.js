@@ -7,6 +7,7 @@ import ActivityFeed from "../components/ActivityFeed";
 import ActivityForm from "../components/ActivityForm";
 import ReplyForm from "../components/ReplyForm";
 import {Auth} from "aws-amplify";
+import checkAuth from "../lib/CheckAuth";
 
 // [TODO] Authenication
 // TODO remove this, and check if we need this dependency anywhere else / remove
@@ -40,35 +41,13 @@ export default function HomeFeedPage() {
     }
   };
 
-  // check if we are authenicated
-  const checkAuth = async () => {
-    try {
-      const user = await Auth.currentAuthenticatedUser({
-        // Optional, By default is false.
-        // If set to true, this call will send a
-        // request to Cognito to get the latest user data
-        bypassCache: false,
-      });
-
-      console.log("user", user);
-      const cognito_user = await Auth.currentAuthenticatedUser();
-
-      setUser({
-        display_name: cognito_user.attributes.name,
-        handle: cognito_user.attributes.preferred_username,
-      });
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
   React.useEffect(() => {
     //prevents double call
     if (dataFetchedRef.current) return;
     dataFetchedRef.current = true;
 
     loadData();
-    checkAuth();
+    checkAuth(setUser);
   }, []);
 
   return (
