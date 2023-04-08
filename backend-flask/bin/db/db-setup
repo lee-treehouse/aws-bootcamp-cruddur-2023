@@ -1,10 +1,18 @@
 #! /bin/bash
-# shellcheck disable=SC1091
-Set -e # stop if it fails at any point see also https://linuxhint.com/bash-set-e/
+# shellcheck disable=all
+set -e # stop if it fails at any point
 
-bin_path="$(realpath .)/bin/"
+CYAN='\033[1;36m'
+NO_COLOR='\033[0m'
+LABEL="db-setup"
+printf "${CYAN}==== ${LABEL}${NO_COLOR}\n"
 
-source "$bin_path/db-drop"
-source "$bin_path/db-create"
-source "$bin_path/db-schema-load"
-source "$bin_path/db-seed"
+bin_path="$(realpath .)/bin"
+
+echo $bin_path
+
+source "$bin_path/db/db-drop"
+source "$bin_path/db/db-create"
+source "$bin_path/db/db-schema-load"
+source "$bin_path/db/db-seed"
+"$bin_path/db/update-cognito-user-ids"
