@@ -26,41 +26,7 @@
     "no-unused-vars": 1,
     "import/no-unresolved": 2,
     "no-undefined": 2,
-    "react/jsx-uses-vars": 2,
-    // from here are the ones i had to turn off to get the current code to run.. will come back and fix
-    "camelcase": 0,
-    "arrow-body-style": 0,
-    "jsx-a11y/label-has-associated-control": 0,
-    "eqeqeq": 0,
-    "import/order": 0,
-    "object-shorthand": 0,
-    "prefer-const": 0,
-    "spaced-comment": 0,
-    "react/jsx-curly-brace-presence": 0,
-    "react/no-unescaped-entities": 0,
-    "import/no-useless-path-segments": 0,
-    "react/react-in-jsx-scope": 0,
-    "react/destructuring-assignment": 0,
-    "react/prop-types": 0,
-    "react/button-has-type": 0,
-    "react/self-closing-comp": 0,
-    "import/no-duplicates": 0,
-    "import/newline-after-import": 0,
-    "consistent-return": 0,
-    "no-else-return": 0,
-    "no-shadow": 0,
-    "prefer-template": 0,
-    "react/no-unknown-property": 0,
-    "react/jsx-no-useless-fragment": 0,
-    "jsx-a11y/click-events-have-key-events": 0,
-    "jsx-a11y/no-static-element-interactions": 0,
-    "default-case": 0,
-    "no-unreachable": 0,
-    "jsx-a11y/anchor-is-valid": 0,
-    "no-empty": 0,
-    "prefer-arrow-callback": 0,
-    "no-var": 0
-
+    "react/jsx-uses-vars": 2
     // add more rules here...
   }
 }
