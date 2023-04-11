@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM 690064039948.dkr.ecr.ap-southeast-2.amazonaws.com/cruddur-python:3.10-slim-buster:3.10-slim-buster
 
 # inside the container
 # If the WORKDIR command is not written in the Dockerfile, it will automatically be created 
