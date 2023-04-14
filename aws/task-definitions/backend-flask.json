@@ -9,7 +9,7 @@
   "containerDefinitions": [
     {
       "name": "backend-flask",
-      "image": "690064039948.dkr.ecr.ap-southeast-2.amazonaws.com/backend-flask",
+      "image": "690064039948.dkr.ecr.ap-southeast-2.amazonaws.com/backend-flaskatest",
       "essential": true,
       "healthCheck": {
         "command": ["CMD-SHELL", "python /backend-flask/bin/flask/health-check"],
