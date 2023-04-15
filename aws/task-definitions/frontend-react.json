@@ -3,12 +3,13 @@
   "executionRoleArn": "arn:aws:iam::690064039948:role/CruddurServiceExecutionRole",
   "taskRoleArn": "arn:aws:iam::690064039948:role/CruddurTaskRole",
   "networkMode": "awsvpc",
+  "cpu": "256",
+  "memory": "512",
+  "requiresCompatibilities": ["FARGATE"],
   "containerDefinitions": [
     {
       "name": "frontend-react-js",
-      "image": "BACKEND_FLASK_IMAGE_URL",
-      "cpu": 256,
-      "memory": 256,
+      "image": "387543059434.dkr.ecr.ca-central-1.amazonaws.com/frontend-react-js",
       "essential": true,
       "portMappings": [
         {
@@ -24,7 +25,7 @@
         "options": {
           "awslogs-group": "cruddur",
           "awslogs-region": "ap-southeast-2",
-          "awslogs-stream-prefix": "frontend-react"
+          "awslogs-stream-prefix": "frontend-react-js"
         }
       }
     }
