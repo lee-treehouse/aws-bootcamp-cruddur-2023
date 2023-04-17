@@ -58,8 +58,9 @@
     "no-empty": 0,
     "prefer-arrow-callback": 0,
     "no-var": 0,
-    "no-unused-var": 0,
-    "no-console": 0
+    "no-unused-vars": 0,
+    "no-console": 0,
+    "func-names": 0
 
     // add more rules here...
   }
