@@ -1,5 +1,5 @@
 import "./DesktopNavigation.css";
-import {ReactComponent as Logo} from "./svg/logo.svg";
+import { ReactComponent as Logo } from "./svg/logo.svg";
 import DesktopNavigationLink from "../components/DesktopNavigationLink";
 import CrudButton from "../components/CrudButton";
 import ProfileInfo from "../components/ProfileInfo";
@@ -42,11 +42,21 @@ export default function DesktopNavigation(props) {
   return (
     <nav>
       <Logo className="logo" />
-      <DesktopNavigationLink url="/" name="Home" handle="home" active={props.active} />
+      <DesktopNavigationLink
+        url="/"
+        name="Home"
+        handle="home"
+        active={props.active}
+      />
       {notificationsLink}
       {messagesLink}
       {profileLink}
-      <DesktopNavigationLink url="/#" name="More" handle="more" active={props.active} />
+      <DesktopNavigationLink
+        url="/#"
+        name="More"
+        handle="more"
+        active={props.active}
+      />
       {button}
       {profile}
     </nav>

@@ -1,9 +1,9 @@
 import "./ConfirmationPage.css";
 import React from "react";
-import {useParams} from "react-router-dom";
-import {ReactComponent as Logo} from "../components/svg/logo.svg";
+import { useParams } from "react-router-dom";
+import { ReactComponent as Logo } from "../components/svg/logo.svg";
 
-import {Auth} from "aws-amplify";
+import { Auth } from "aws-amplify";
 
 export default function ConfirmationPage() {
   const [email, setEmail] = React.useState("");
@@ -32,7 +32,9 @@ export default function ConfirmationPage() {
       // for this to be an okay match?
       console.log(err);
       if (err.message == "Username cannot be empty") {
-        setErrors("You need to provide an email in order to send Resend Activiation Code");
+        setErrors(
+          "You need to provide an email in order to send Resend Activiation Code"
+        );
       } else if (err.message == "Username/client id combination not found.") {
         setErrors("Email is invalid or cannot be found.");
       }
@@ -60,7 +62,9 @@ export default function ConfirmationPage() {
   let code_button;
   if (codeSent) {
     code_button = (
-      <div className="sent-message">A new activation code has been sent to your email</div>
+      <div className="sent-message">
+        A new activation code has been sent to your email
+      </div>
     );
   } else {
     code_button = (

@@ -3,30 +3,32 @@ import React from "react";
 import { ReactComponent as Logo } from "../components/svg/logo.svg";
 import { Link } from "react-router-dom";
 
-import { Auth } from 'aws-amplify';
-
+import { Auth } from "aws-amplify";
 
 export default function SigninPage() {
-  const [cognitoErrors, setCognitoErrors] = React.useState('');
+  const [cognitoErrors, setCognitoErrors] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
 
   const onsubmit = async (event) => {
-    setCognitoErrors('')
+    setCognitoErrors("");
     event.preventDefault();
     try {
-      const user = await Auth.signIn(email, password)
-          localStorage.setItem("access_token", user.signInUserSession.accessToken.jwtToken)
-          window.location.href = "/"
+      const user = await Auth.signIn(email, password);
+      localStorage.setItem(
+        "access_token",
+        user.signInUserSession.accessToken.jwtToken
+      );
+      window.location.href = "/";
     } catch (error) {
-      if (error.code == 'UserNotConfirmedException') {
-        window.location.href = "/confirm"
+      if (error.code == "UserNotConfirmedException") {
+        window.location.href = "/confirm";
       }
-      console.log(error)
-      setCognitoErrors(error.message)
+      console.log(error);
+      setCognitoErrors(error.message);
     }
-    return false
-  }
+    return false;
+  };
 
   const email_onchange = (event) => {
     setEmail(event.target.value);
@@ -36,10 +38,9 @@ export default function SigninPage() {
   };
 
   let errors;
-  if (cognitoErrors){
-    errors = <div className='errors'>{cognitoErrors}</div>;
+  if (cognitoErrors) {
+    errors = <div className="errors">{cognitoErrors}</div>;
   }
-
 
   return (
     <article className="signin-article">

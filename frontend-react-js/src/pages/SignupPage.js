@@ -1,9 +1,9 @@
 import "./SignupPage.css";
 import React from "react";
-import {ReactComponent as Logo} from "../components/svg/logo.svg";
-import {Link} from "react-router-dom";
+import { ReactComponent as Logo } from "../components/svg/logo.svg";
+import { Link } from "react-router-dom";
 
-import {Auth} from "aws-amplify";
+import { Auth } from "aws-amplify";
 
 export default function SignupPage() {
   // Username is Eamil
@@ -17,7 +17,7 @@ export default function SignupPage() {
     event.preventDefault();
     setCognitoErrors("");
     try {
-      const {user} = await Auth.signUp({
+      const { user } = await Auth.signUp({
         username: email,
         password: password,
         attributes: {
@@ -78,12 +78,20 @@ export default function SignupPage() {
 
             <div className="field text_field username">
               <label>Username</label>
-              <input type="text" value={username} onChange={username_onchange} />
+              <input
+                type="text"
+                value={username}
+                onChange={username_onchange}
+              />
             </div>
 
             <div className="field text_field password">
               <label>Password</label>
-              <input type="password" value={password} onChange={password_onchange} />
+              <input
+                type="password"
+                value={password}
+                onChange={password_onchange}
+              />
             </div>
           </div>
           {errors}

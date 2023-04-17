@@ -6,7 +6,7 @@ import DesktopSidebar from "../components/DesktopSidebar";
 import ActivityFeed from "../components/ActivityFeed";
 import ActivityForm from "../components/ActivityForm";
 import ReplyForm from "../components/ReplyForm";
-import {Auth} from "aws-amplify";
+import { Auth } from "aws-amplify";
 import checkAuth from "../lib/CheckAuth";
 
 // [TODO] Authenication
@@ -54,7 +54,11 @@ export default function HomeFeedPage() {
     <article>
       <DesktopNavigation user={user} active={"home"} setPopped={setPopped} />
       <div className="content">
-        <ActivityForm popped={popped} setPopped={setPopped} setActivities={setActivities} />
+        <ActivityForm
+          popped={popped}
+          setPopped={setPopped}
+          setActivities={setActivities}
+        />
         <ReplyForm
           activity={replyActivity}
           popped={poppedReply}

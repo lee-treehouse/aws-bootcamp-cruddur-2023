@@ -1,4 +1,4 @@
-import {Auth} from "aws-amplify";
+import { Auth } from "aws-amplify";
 
 const checkAuth = async (setUser) => {
   Auth.currentAuthenticatedUser({

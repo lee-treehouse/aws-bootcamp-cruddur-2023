@@ -1,8 +1,8 @@
 import "./RecoverPage.css";
 import React from "react";
-import {ReactComponent as Logo} from "../components/svg/logo.svg";
-import {Link} from "react-router-dom";
-import {Auth} from "aws-amplify";
+import { ReactComponent as Logo } from "../components/svg/logo.svg";
+import { Link } from "react-router-dom";
+import { Auth } from "aws-amplify";
 
 export default function RecoverPage() {
   // Username is Eamil
@@ -88,11 +88,19 @@ export default function RecoverPage() {
           </div>
           <div className="field text_field password">
             <label>New Password</label>
-            <input type="password" value={password} onChange={password_onchange} />
+            <input
+              type="password"
+              value={password}
+              onChange={password_onchange}
+            />
           </div>
           <div className="field text_field password_again">
             <label>New Password Again</label>
-            <input type="password" value={passwordAgain} onChange={password_again_onchange} />
+            <input
+              type="password"
+              value={passwordAgain}
+              onChange={password_again_onchange}
+            />
           </div>
         </div>
         {errors}
