@@ -43,8 +43,8 @@
         {"name": "OTEL_EXPORTER_OTLP_ENDPOINT", "value": "https://api.honeycomb.io"},
         {"name": "AWS_COGNITO_USER_POOL_ID", "value": "ap-southeast-2_kuTElgT47"},
         {"name": "AWS_COGNITO_USER_POOL_CLIENT_ID", "value": "21u7cgurmcd7jd3er5bfj5s394"},
-        {"name": "FRONTEND_URL", "value": "*"},
-        {"name": "BACKEND_URL", "value": "*"},
+        {"name": "FRONTEND_URL", "value": "leentaylor.xyz"},
+        {"name": "BACKEND_URL", "value": "api.leentaylor.xyz"},
         {"name": "AWS_DEFAULT_REGION", "value": "ap-southeast-2"}
       ],
       "secrets": [
