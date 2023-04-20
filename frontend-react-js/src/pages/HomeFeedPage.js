@@ -6,8 +6,8 @@ import DesktopSidebar from "../components/DesktopSidebar";
 import ActivityFeed from "../components/ActivityFeed";
 import ActivityForm from "../components/ActivityForm";
 import ReplyForm from "../components/ReplyForm";
-import { Auth } from "aws-amplify";
-import checkAuth from "../lib/CheckAuth";
+import {Auth} from "aws-amplify";
+import {checkAuth, getAccessToken} from "../lib/CheckAuth";
 
 // [TODO] Authenication
 // TODO remove this, and check if we need this dependency anywhere else / remove
@@ -24,10 +24,12 @@ export default function HomeFeedPage() {
   const loadData = async () => {
     try {
       const backend_url = `${process.env.REACT_APP_BACKEND_URL}/api/activities/home`;
+      await getAccessToken();
+      const access_token = localStorage.getItem("access_token");
       const res = await fetch(backend_url, {
         method: "GET",
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("access_token")}`,
+          Authorization: `Bearer ${access_token}`,
         },
       });
       let resJson = await res.json();
@@ -54,11 +56,7 @@ export default function HomeFeedPage() {
     <article>
       <DesktopNavigation user={user} active={"home"} setPopped={setPopped} />
       <div className="content">
-        <ActivityForm
-          popped={popped}
-          setPopped={setPopped}
-          setActivities={setActivities}
-        />
+        <ActivityForm popped={popped} setPopped={setPopped} setActivities={setActivities} />
         <ReplyForm
           activity={replyActivity}
           popped={poppedReply}
