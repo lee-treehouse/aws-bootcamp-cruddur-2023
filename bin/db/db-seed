@@ -1,0 +1,22 @@
+#! /bin/bash
+## shellcheck disable=all
+
+#echo "== db-schema-load"
+
+if [ "$1" = "PROD" ]; then
+    echo "USING PROD"
+    CON_URL=$PRODUCTION_CONNECTION_URL
+else
+    echo "USING LOCAL"
+    CON_URL=$CONNECTION_URL
+fi
+
+ABS_PATH=$(readlink -f "$0")
+DB_PATH=$(dirname "$ABS_PATH")
+BIN_PATH=$(dirname "$DB_PATH")
+PROJECT_PATH=$(dirname "$BIN_PATH")
+BACKEND_FLASK_PATH="$PROJECT_PATH/backend-flask"
+seed_path="$BACKEND_FLASK_PATH/db/seed.sql"
+echo "$seed_path"
+
+psql "$CON_URL" <"$seed_path"
