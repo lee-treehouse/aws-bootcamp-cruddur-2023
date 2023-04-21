@@ -8,11 +8,8 @@ from datetime import datetime, timedelta, timezone
 import uuid
 
 current_path = os.path.dirname(os.path.abspath(__file__))
-parent_path = os.path.abspath(os.path.join(current_path, "..", ".."))
-
-# i feel like we wouldn't need to do something like this to import a module in js, confirm it's really necessary here
+parent_path = os.path.abspath(os.path.join(current_path, "..", "..", "backend-flask"))
 sys.path.append(parent_path)
-
 from lib.db import db
 
 attrs = {"endpoint_url": "http://localhost:8000"}
