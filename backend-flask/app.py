@@ -14,12 +14,16 @@ from services.message_groups import *
 from services.messages import *
 from services.create_message import *
 from services.show_activity import *
+from aws_xray_sdk.core import xray_recorder
+from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
+
 
 from lib.cognito_jwt_token import (
     CognitoJwtToken,
     extract_access_token,
     TokenVerifyError,
 )
+
 
 # app.py updates for honeycomb
 from opentelemetry import trace
@@ -54,6 +58,11 @@ print("hello lee")
 
 # Initialize automatic instrumentation with Flask
 app = Flask(__name__)
+
+xray_url = os.getenv("AWS_XRAY_URL")
+xray_recorder.configure(service="backend-flask", dynamic_naming=xray_url)
+XRayMiddleware(app, xray_recorder)
+
 FlaskInstrumentor().instrument_app(app)
 RequestsInstrumentor().instrument()
 
