@@ -1,0 +1,13 @@
+get:
+  description: Return a list of two way private conversations for the user
+  tags:
+    - messages
+  responses:
+    '200':
+      description: Returns an array of messages groups for a specific user
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/MessageGroup.yaml

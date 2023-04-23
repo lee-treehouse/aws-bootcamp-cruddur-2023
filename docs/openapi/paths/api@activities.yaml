@@ -1,0 +1,26 @@
+post:
+  description: Create a new activitiy eg. Creating a Crud
+  tags:
+    - activities
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            handle:
+              type: string
+            message:
+              type: string
+            ttl:
+              type: string
+  responses:
+    '200':
+      description: Returns a recently created activity"
+      content:
+        application/json:
+          schema:
+            type: object
+            items:
+              $ref: ../components/schemas/Activity.yaml
