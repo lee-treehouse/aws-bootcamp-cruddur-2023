@@ -1,0 +1,37 @@
+{
+  "family": "backend-flask-api-docs",
+  "executionRoleArn": "arn:aws:iam::690064039948:role/CruddurServiceExecutionRole",
+  "taskRoleArn": "arn:aws:iam::690064039948:role/CruddurTaskRole",
+  "networkMode": "awsvpc",
+  "cpu": "256",
+  "memory": "512",
+  "requiresCompatibilities": ["FARGATE"],
+  "runtimePlatform": {
+    "operatingSystemFamily": "LINUX",
+    "cpuArchitecture": "ARM64"
+  },
+  "containerDefinitions": [
+    {
+      "name": "backend-flask-api-docs",
+      "image": "690064039948.dkr.ecr.ap-southeast-2.amazonaws.com/backend-flask-api-docs",
+      "essential": true,
+      "portMappings": [
+        {
+          "name": "backend-flask-api-docs",
+          "containerPort": 3001,
+          "protocol": "tcp",
+          "appProtocol": "http"
+        }
+      ],
+
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "cruddur",
+          "awslogs-region": "ap-southeast-2",
+          "awslogs-stream-prefix": "backend-flask-api-docs"
+        }
+      }
+    }
+  ]
+}
