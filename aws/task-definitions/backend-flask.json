@@ -14,7 +14,7 @@
     {
       "name": "xray",
       "image": "public.ecr.aws/xray/aws-xray-daemon",
-      "essential": true,
+      "essential": false,
       "user": "1337",
       "portMappings": [
         {
@@ -31,9 +31,9 @@
       "healthCheck": {
         "command": ["CMD-SHELL", "python /backend-flask/bin/health-check"],
         "interval": 30,
-        "timeout": 5,
-        "retries": 3,
-        "startPeriod": 60
+        "timeout": 15,
+        "retries": 2,
+        "startPeriod": 120
       },
       "portMappings": [
         {
