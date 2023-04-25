@@ -1,6 +1,6 @@
 import "./UserFeedPage.css";
 import React from "react";
-import { useParams } from "react-router-dom";
+import {useParams} from "react-router-dom";
 
 import DesktopNavigation from "../components/DesktopNavigation";
 import DesktopSidebar from "../components/DesktopSidebar";
@@ -60,7 +60,7 @@ export default function UserFeedPage() {
     <article>
       <DesktopNavigation user={user} active={"profile"} setPopped={setPopped} />
       <div className="content">
-        <ActivityForm popped={popped} setActivities={setActivities} />
+        <ActivityForm popped={popped} setActivities={setActivities} user={user} />
         <ActivityFeed title={title} activities={activities} />
       </div>
       <DesktopSidebar user={user} />
