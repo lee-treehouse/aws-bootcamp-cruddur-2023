@@ -2,6 +2,7 @@ import * as cdk from "aws-cdk-lib";
 import * as s3 from "aws-cdk-lib/aws-s3";
 import * as s3n from "aws-cdk-lib/aws-s3-notifications";
 import * as lambda from "aws-cdk-lib/aws-lambda";
+import * as iam from "aws-cdk-lib/aws-iam";
 import {Construct} from "constructs";
 import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 dotenv.config();
@@ -19,6 +20,9 @@ export class ThumbingServerlessCdkStack extends cdk.Stack {
     const bucket = this.importBucket(bucketName);
     const lambdaFunc = this.createLambda(bucketName, functionPath, folderInput, folderOutput);
     this.createS3NotifyToLambda(folderInput, lambdaFunc, bucket);
+
+    const s3ReadWritePolicy = this.createPolicyBucketAccess(bucket.bucketArn);
+    lambdaFunc.addToRolePolicy(s3ReadWritePolicy);
   }
 
   createBucket(bucketName: string) {
@@ -60,5 +64,13 @@ export class ThumbingServerlessCdkStack extends cdk.Stack {
     bucket.addEventNotification(s3.EventType.OBJECT_CREATED_PUT, destination, {
       prefix: folderInput,
     });
+  }
+
+  createPolicyBucketAccess(bucketArn: string) {
+    const s3ReadWritePolicy = new iam.PolicyStatement({
+      actions: ["s3:GetObject", "s3:PutObject"],
+      resources: [`${bucketArn}/*`],
+    });
+    return s3ReadWritePolicy;
   }
 }
