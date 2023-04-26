@@ -2,6 +2,8 @@
 
 import urllib.request
 
+
+print("debug - from health check")
 try:
     response = urllib.request.urlopen("http://localhost:4567/api/health-check")
     if response.getcode() == 200:

@@ -29,11 +29,11 @@
       "image": "690064039948.dkr.ecr.ap-southeast-2.amazonaws.com/backend-flask",
       "essential": true,
       "healthCheck": {
-        "command": ["CMD-SHELL", "python /backend-flask/bin/health-check"],
+        "command": ["CMD-SHELL", "python /backend-flask/bin/flask/health-check"],
         "interval": 30,
-        "timeout": 15,
-        "retries": 2,
-        "startPeriod": 120
+        "timeout": 5,
+        "retries": 3,
+        "startPeriod": 60
       },
       "portMappings": [
         {

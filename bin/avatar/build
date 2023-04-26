@@ -11,3 +11,7 @@ cd "$SERVERLESS_PROJECT_PATH" || exit
 npm install
 rm -rf node_modules/sharp
 SHARP_IGNORE_GLOBAL_LIBVIPS=1 npm install --arch=x64 --platform=linux --libc=glibc sharp
+#todo
+# this is the wrong place needs to happen in the lambda location.. i have entirely removed this
+#library from thumbing-serverless location but need to do something to make sure when process-image
+#folder has npm install this gets fixed
