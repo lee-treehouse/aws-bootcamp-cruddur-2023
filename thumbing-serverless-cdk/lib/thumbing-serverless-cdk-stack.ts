@@ -6,6 +6,7 @@ import * as iam from "aws-cdk-lib/aws-iam";
 import {Construct} from "constructs";
 import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 import * as sns from "aws-cdk-lib/aws-sns";
+import * as subscriptions from "aws-cdk-lib/aws-sns-subscriptions";
 dotenv.config();
 
 export class ThumbingServerlessCdkStack extends cdk.Stack {
@@ -18,6 +19,7 @@ export class ThumbingServerlessCdkStack extends cdk.Stack {
     const folderInput = process.env.THUMBING_FOLDER_INPUT!;
     const folderOutput = process.env.THUMBING_FOLDER_OUTPUT!;
     const topicName = process.env.THUMBING_TOPIC_NAME!;
+    const webhookUrl = process.env.THUMBING_WEBHOOK_URL!;
 
     const bucket = this.importBucket(bucketName);
     const lambdaFunc = this.createLambda(bucketName, functionPath, folderInput, folderOutput);
@@ -27,6 +29,7 @@ export class ThumbingServerlessCdkStack extends cdk.Stack {
     lambdaFunc.addToRolePolicy(s3ReadWritePolicy);
 
     const snsTopic = this.createSnsTopic(topicName);
+    this.createSnsSubscription(snsTopic, webhookUrl);
   }
 
   createBucket(bucketName: string) {
@@ -86,5 +89,10 @@ export class ThumbingServerlessCdkStack extends cdk.Stack {
       topicName: topicName,
     });
     return snsTopic;
+  }
+
+  createSnsSubscription(snsTopic: sns.ITopic, webhookUrl: string): sns.Subscription {
+    const snsSubscription = snsTopic.addSubscription(new subscriptions.UrlSubscription(webhookUrl));
+    return snsSubscription;
   }
 }
