@@ -25,7 +25,7 @@ async function getOriginalImage(client, srcBucket, srcKey) {
 }
 
 async function processImage(image, width, height) {
-  const processedImage = await sharp(image).resize(width, height).png().toBuffer();
+  const processedImage = await sharp(image).resize(width, height).jpeg().toBuffer();
   return processedImage;
 }
 
