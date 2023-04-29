@@ -1,7 +1,7 @@
 import "./ActivityForm.css";
 import React from "react";
 import process from "process";
-import { ReactComponent as BombIcon } from "./svg/bomb.svg";
+import {ReactComponent as BombIcon} from "./svg/bomb.svg";
 
 export default function ActivityForm(props) {
   const [count, setCount] = React.useState(0);
@@ -28,6 +28,7 @@ export default function ActivityForm(props) {
         body: JSON.stringify({
           message: message,
           ttl: ttl,
+          handle: props.user?.handle ?? "unavailable",
         }),
       });
       let data = await res.json();
