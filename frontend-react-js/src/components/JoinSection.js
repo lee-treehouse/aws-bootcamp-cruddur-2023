@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function JoinSection(props) {
   return (
     <div className="join">
-      <div className="join-title">Join The Super Epic Party!</div>
+      <div className="join-title">Join The Party!</div>
       <div className="join-content">
         <p>Have something you want to say?</p>
         <p>Don't think about it, just crud it!</p>

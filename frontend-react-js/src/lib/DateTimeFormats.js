@@ -1,15 +1,19 @@
-import {DateTime} from "luxon";
+import { DateTime } from "luxon";
 
 export function format_datetime(value) {
-  const datetime = DateTime.fromISO(value, {zone: "utc"});
-  const local_datetime = datetime.setZone(Intl.DateTimeFormat().resolvedOptions().timeZone);
+  const datetime = DateTime.fromISO(value, { zone: "utc" });
+  const local_datetime = datetime.setZone(
+    Intl.DateTimeFormat().resolvedOptions().timeZone
+  );
   return local_datetime.toLocaleString(DateTime.DATETIME_FULL);
 }
 
 export function message_time_ago(value) {
   console.log(value);
-  const datetime = DateTime.fromISO(value, {zone: "utc"});
-  const created = datetime.setZone(Intl.DateTimeFormat().resolvedOptions().timeZone);
+  const datetime = DateTime.fromISO(value, { zone: "utc" });
+  const created = datetime.setZone(
+    Intl.DateTimeFormat().resolvedOptions().timeZone
+  );
   const now = DateTime.now();
   console.log("message_time_group", created, now);
   const diff_mins = now.diff(created, "minutes").toObject().minutes;
@@ -28,8 +32,10 @@ export function message_time_ago(value) {
 }
 
 export function time_ago(value) {
-  const datetime = DateTime.fromISO(value, {zone: "utc"});
-  const future = datetime.setZone(Intl.DateTimeFormat().resolvedOptions().timeZone);
+  const datetime = DateTime.fromISO(value, { zone: "utc" });
+  const future = datetime.setZone(
+    Intl.DateTimeFormat().resolvedOptions().timeZone
+  );
   const now = DateTime.now();
   const diff_mins = future.diff(now, "minutes").toObject().minutes;
   const diff_hours = future.diff(now, "hours").toObject().hours;

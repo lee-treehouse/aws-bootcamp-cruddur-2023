@@ -1,7 +1,7 @@
 import "./ActivityForm.css";
 import React from "react";
 import process from "process";
-import {ReactComponent as BombIcon} from "./svg/bomb.svg";
+import { ReactComponent as BombIcon } from "./svg/bomb.svg";
 
 export default function ActivityForm(props) {
   const [count, setCount] = React.useState(0);
@@ -17,7 +17,6 @@ export default function ActivityForm(props) {
   const onsubmit = async (event) => {
     event.preventDefault();
     try {
-      const handle = "lee_cruds";
       const backend_url = `${process.env.REACT_APP_BACKEND_URL}/api/activities`;
       console.log("onsubmit payload", message);
       const res = await fetch(backend_url, {
@@ -27,9 +26,8 @@ export default function ActivityForm(props) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          message,
-          ttl,
-          handle: props.user?.handle ?? "unavailable",
+          message: message,
+          ttl: ttl,
         }),
       });
       let data = await res.json();

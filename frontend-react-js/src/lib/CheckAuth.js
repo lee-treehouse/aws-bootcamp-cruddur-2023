@@ -1,4 +1,4 @@
-import {Auth} from "aws-amplify";
+import { Auth } from "aws-amplify";
 
 export async function getAccessToken() {
   Auth.currentSession()
@@ -26,7 +26,10 @@ export async function checkAuth(setUser) {
     })
     .then((cognito_user_session) => {
       console.log("cognito_user_session", cognito_user_session);
-      localStorage.setItem("access_token", cognito_user_session.accessToken.jwtToken);
+      localStorage.setItem(
+        "access_token",
+        cognito_user_session.accessToken.jwtToken
+      );
     })
     .catch((err) => console.log(err));
 }

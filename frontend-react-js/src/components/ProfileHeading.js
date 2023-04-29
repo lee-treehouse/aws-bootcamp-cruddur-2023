@@ -1,10 +1,11 @@
 import "./ProfileHeading.css";
-import EditProfileButton from "../components/EditProfileButton";
+import EditProfileButton from "./EditProfileButton";
 
-import ProfileAvatar from "components/ProfileAvatar";
+import ProfileAvatar from "./ProfileAvatar";
 
 export default function ProfileHeading(props) {
-  const backgroundImage = 'url("https://assets.cruddur.com/banners/banner.jpg")';
+  console.log(props);
+  const backgroundImage = 'url("https://assets.leentaylor.xyz/banners/banner.jpg")';
   const styles = {
     backgroundImage: backgroundImage,
     backgroundSize: "cover",

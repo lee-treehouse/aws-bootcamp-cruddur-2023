@@ -19,7 +19,7 @@
   "extends": [],
   "plugins": [],
   "rules": {
-    "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}], // To allow importing .jsx files
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }], // To allow importing .jsx files
     "no-undefined": 2,
     "react/jsx-uses-vars": 2,
     // from here are the ones i had to turn off to get the current code to run.. will come back and fix
