@@ -1,4 +1,4 @@
 #! /bin/bash
 
-aws s3 rm "s3://assets.leentaylor.xyz/avatars/original/data.jpg"
+aws s3 rm "s3://cruddur-leentaylor.xyz-uploaded-avatars/avatars/original/data.jpg"
 aws s3 rm "s3://assets.leentaylor.xyz/avatars/processed/data.jpg"
