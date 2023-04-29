@@ -1,12 +1,12 @@
 import "./MessageGroupPage.css";
 import React from "react";
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import DesktopNavigation from "../components/DesktopNavigation";
 import MessageGroupFeed from "../components/MessageGroupFeed";
 import MessagesFeed from "../components/MessageFeed";
 import MessagesForm from "../components/MessageForm";
-import {checkAuth, getAccessToken} from "../lib/CheckAuth";
+import { checkAuth, getAccessToken } from "../lib/CheckAuth";
 
 export default function MessageGroupPage() {
   const [otherUser, setOtherUser] = React.useState([]);
@@ -70,7 +70,10 @@ export default function MessageGroupPage() {
     <article>
       <DesktopNavigation user={user} active={"home"} setPopped={setPopped} />
       <section className="message_groups">
-        <MessageGroupFeed otherUser={otherUser} message_groups={messageGroups} />
+        <MessageGroupFeed
+          otherUser={otherUser}
+          message_groups={messageGroups}
+        />
       </section>
       <div className="content messages">
         <MessagesFeed messages={messages} />

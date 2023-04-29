@@ -3,10 +3,7 @@ import React from "react";
 
 import DesktopNavigation from "../components/DesktopNavigation";
 import MessageGroupFeed from "../components/MessageGroupFeed";
-import {checkAuth, getAccessToken} from "../lib/CheckAuth";
-
-// [TODO] Authenication
-import Cookies from "js-cookie";
+import { checkAuth, getAccessToken } from "../lib/CheckAuth";
 
 export default function MessageGroupsPage() {
   const [messageGroups, setMessageGroups] = React.useState([]);
@@ -20,10 +17,10 @@ export default function MessageGroupsPage() {
       await getAccessToken();
       const access_token = localStorage.getItem("access_token");
       const res = await fetch(backend_url, {
-        method: "GET",
         headers: {
           Authorization: `Bearer ${access_token}`,
         },
+        method: "GET",
       });
       let resJson = await res.json();
       if (res.status === 200) {

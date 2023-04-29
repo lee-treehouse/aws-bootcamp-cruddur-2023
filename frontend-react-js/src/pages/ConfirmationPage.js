@@ -3,6 +3,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { ReactComponent as Logo } from "../components/svg/logo.svg";
 
+// [TODO] Authenication
 import { Auth } from "aws-amplify";
 
 export default function ConfirmationPage() {
@@ -46,7 +47,6 @@ export default function ConfirmationPage() {
     setErrors("");
     try {
       await Auth.confirmSignUp(email, code);
-      // TODO email is confirmed but they are not signed in - improve this UX
       window.location.href = "/";
     } catch (error) {
       setErrors(error.message);

@@ -3,6 +3,7 @@ import React from "react";
 import { ReactComponent as Logo } from "../components/svg/logo.svg";
 import { Link } from "react-router-dom";
 
+// [TODO] Authenication
 import { Auth } from "aws-amplify";
 
 export default function SignupPage() {
@@ -11,11 +12,14 @@ export default function SignupPage() {
   const [email, setEmail] = React.useState("");
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
-  const [cognitoErrors, setCognitoErrors] = React.useState("");
+  const [errors, setErrors] = React.useState("");
 
   const onsubmit = async (event) => {
     event.preventDefault();
-    setCognitoErrors("");
+    setErrors("");
+    console.log("username", username);
+    console.log("email", email);
+    console.log("name", name);
     try {
       const { user } = await Auth.signUp({
         username: email,
@@ -34,7 +38,7 @@ export default function SignupPage() {
       window.location.href = `/confirm?email=${email}`;
     } catch (error) {
       console.log(error);
-      setCognitoErrors(error.message);
+      setErrors(error.message);
     }
     return false;
   };
@@ -52,9 +56,9 @@ export default function SignupPage() {
     setPassword(event.target.value);
   };
 
-  let errors;
-  if (cognitoErrors) {
-    errors = <div className="errors">{cognitoErrors}</div>;
+  let el_errors;
+  if (errors) {
+    el_errors = <div className="errors">{errors}</div>;
   }
 
   return (
@@ -94,7 +98,7 @@ export default function SignupPage() {
               />
             </div>
           </div>
-          {errors}
+          {el_errors}
           <div className="submit">
             <button type="submit">Sign Up</button>
           </div>
