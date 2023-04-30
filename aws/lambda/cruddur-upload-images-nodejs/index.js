@@ -11,5 +11,15 @@ export const handler = async (event, context) => {
 
   const presignedURL = await getSignedUrl(client, command, {expiresIn: 60 * 5});
 
-  return {url: presignedURL};
+  const response = {
+    statusCode: 200,
+    headers: {
+      "Access-Control-Allow-Origin": "http://localhost:3000",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({url: presignedURL}),
+  };
+  return response;
 };
