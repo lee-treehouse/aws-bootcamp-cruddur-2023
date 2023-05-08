@@ -8,8 +8,8 @@ phases:
       - echo "cd into $CODEBUILD_SRC_DIR/backend-flask"
       - cd $CODEBUILD_SRC_DIR/backend-flask
       - echo aws region is $AWS_DEFAULT_REGION
-      - echo docker password is $IMAGE_URL
-      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $IMAGE_URL
+      - echo docker password is $TEST_IMAGE_URL
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $TEST_IMAGE_URL
   build:
     commands:
       - echo Build started on `date`
@@ -26,6 +26,7 @@ phases:
       - printf "[{\"name\":\"$CONTAINER_NAME\",\"imageUri\":\"$IMAGE_URL/$REPO_NAME\"}]" > imagedefinitions.json
 
 env:
+  TEST_IMAGE_URL: 690064039948.dkr.ecr.ap-southeast-2.amazonaws.com
   AWS_ACCOUNT_ID: 690064039948
   AWS_DEFAULT_REGION: ap-southeast-2
   CONTAINER_NAME: backend-flask
