@@ -6,10 +6,6 @@
   "cpu": "256",
   "memory": "512",
   "requiresCompatibilities": ["FARGATE"],
-  "runtimePlatform": {
-    "operatingSystemFamily": "LINUX",
-    "cpuArchitecture": "ARM64"
-  },
   "containerDefinitions": [
     {
       "name": "xray",
