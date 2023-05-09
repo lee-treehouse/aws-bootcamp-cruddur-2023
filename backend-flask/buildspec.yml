@@ -9,12 +9,17 @@ phases:
       - cd $CODEBUILD_SRC_DIR/backend-flask
       - echo aws region is $AWS_DEFAULT_REGION
       - echo docker password is $TEST_IMAGE_URL
+      - wget https://github.com/docker/buildx/releases/download/v0.8.2/buildx-v0.8.2.linux-amd64
+      - mkdir -p ~/.docker/cli-plugins
+      - mv buildx-v0.8.2.linux-amd64 ~/.docker/cli-plugins/docker-buildx
+      - chmod a+rx ~/.docker/cli-plugins/docker-buildx
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $TEST_IMAGE_URL
   build:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t backend-flask .
+      - docker buildx create --use
+      - docker buildx build --platform linux/amd64,linux/arm64 -t backend-flask .
       - "docker tag $REPO_NAME $IMAGE_URL/$REPO_NAME"
   post_build:
     commands:
