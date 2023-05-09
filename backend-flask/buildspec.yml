@@ -19,7 +19,7 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker buildx create --use
-      - docker buildx build --platform linux/amd64,linux/arm64 -t backend-flask .
+      - docker buildx build --platform linux/amd64,linux/arm64 -f dockerfile.prod -t backend-flask .
       - "docker tag $REPO_NAME $IMAGE_URL/$REPO_NAME"
   post_build:
     commands:
