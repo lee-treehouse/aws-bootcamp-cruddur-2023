@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: 2010-09-09
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html
+Description: 
+  Set up ECS Infrastructure
+
+Metadata: template metadata
+
+Parameters: set of parameters
+
+Rules: set of rules
+
+Mappings: set of mappings
+
+Conditions: set of conditions
+
+Transform: set of transforms
+
+Resources: set of resources
+
+Outputs: set of outputs
