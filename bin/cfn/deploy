@@ -1,0 +1,12 @@
+#! /bin/bash
+set -e
+
+CFN_PATH="$HOME/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/aws/cfn/template.yaml"
+
+echo "$CFN_PATH"
+
+aws cloudformation deploy \
+    --stack-name "mycluster" \
+    --template-file "$CFN_PATH" \
+    --no-execute-changeset \
+    --capabilities CAPABILITY_NAMED_IAM
