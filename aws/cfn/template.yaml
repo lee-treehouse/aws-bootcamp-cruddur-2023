@@ -7,7 +7,7 @@ Resources:
     Properties:
       ClusterName: MyCluster1
       CapacityProviders:
-        - FARGATE
+        - "FARGATE"
 #Parameters:
 #Mappings:
 #Outputs:
