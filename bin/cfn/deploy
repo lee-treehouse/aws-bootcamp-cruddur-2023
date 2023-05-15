@@ -8,5 +8,6 @@ echo "$CFN_PATH"
 aws cloudformation deploy \
     --stack-name "mycluster" \
     --template-file "$CFN_PATH" \
+    --s3-bucket "cfn-artifacts-leentaylor" \
     --no-execute-changeset \
     --capabilities CAPABILITY_NAMED_IAM
