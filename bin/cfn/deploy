@@ -3,6 +3,8 @@ set -e
 
 CFN_PATH="$HOME/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/aws/cfn/template.yaml"
 
+cfn-lint "$CFN_PATH"
+
 echo "$CFN_PATH"
 
 aws cloudformation deploy \
