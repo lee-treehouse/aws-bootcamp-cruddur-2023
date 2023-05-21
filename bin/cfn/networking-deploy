@@ -8,8 +8,9 @@ cfn-lint "$CFN_PATH"
 echo "$CFN_PATH"
 
 aws cloudformation deploy \
-    --stack-name "Cruddur" \
+    --stack-name "CrdNet" \
     --template-file "$CFN_PATH" \
     --s3-bucket "cfn-artifacts-leentaylor" \
     --no-execute-changeset \
+    --tags group=cruddur-networking \
     --capabilities CAPABILITY_NAMED_IAM
