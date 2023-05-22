@@ -1,0 +1,7 @@
+[deploy]
+bucket = 'cfn-artifacts-leentaylor'
+region = 'ap-southeast-2'
+stack_name = 'CrdCluster'
+
+[parameters]
+CertificateArn = 'arn:aws:acm:ap-southeast-2:690064039948:certificate/0cc55bd9-315f-41dd-a907-61425917369c'
