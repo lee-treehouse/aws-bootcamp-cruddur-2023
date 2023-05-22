@@ -3,3 +3,4 @@ docker/**/*
 *.env
 frontend-react-js/build/**/*
 node_modules
+*.toml
