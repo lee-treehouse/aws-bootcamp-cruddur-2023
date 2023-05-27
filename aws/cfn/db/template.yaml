@@ -39,8 +39,10 @@ Parameters:
     Default: '15.2'
   MasterUsername:
     Type: String
+    Default: cruddurroot
   MasterUserPassword:
     Type: String
+    Default: tuEE33z2Qvl383
     NoEcho: true
 
 Resources:
@@ -49,7 +51,7 @@ Resources:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupName: !Sub "${AWS::StackName}RDSSG"
-      GroupDescription: Public Facing SG for our Cruddur ALB
+      GroupDescription: SG for RDS DB
       VpcId:
         Fn::ImportValue:
           !Sub ${NetworkingStack}VpcId
@@ -60,7 +62,7 @@ Resources:
               !Sub ${ClusterStack}ServiceSecurityGroupId
           FromPort: 5432
           ToPort: 5432
-          Description: ALB HTTP
+          Description: SG RDS
   DBSubnetGroup:
     # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnetgroup.html
     Type: AWS::RDS::DBSubnetGroup
