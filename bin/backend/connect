@@ -1,6 +1,7 @@
 #! /bin/bash
 if [ -z "$1" ]; then
-    echo "No TASK_ID argument supplied eg ./bin/ecs/connect-to-backend-flask 99b2f8953616495e99545e5a6066fbb5d"
+    # get the task id from the service
+    echo "No TASK_ID argument supplied eg ./bin/backend/connect f92c7818b12444bcb5353adb9c52aa42"
     exit 1
 fi
 TASK_ID=$1
