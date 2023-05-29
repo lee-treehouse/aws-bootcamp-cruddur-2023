@@ -56,7 +56,7 @@ Parameters:
     Default: 15
   BackendHealthCheckPath:
     Type: String
-    Default: "/api/health-check"
+    Default: "/api/health-check?origin=targetGroupDef"
   BackendHealthCheckPort:
     Type: String
     Default: 4567
