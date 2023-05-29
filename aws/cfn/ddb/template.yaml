@@ -54,7 +54,7 @@ Resources:
     # https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-function.html
     Type: AWS::Serverless::Function
     Properties:
-      Architectures: arm64
+      Architectures: [arm64]
       CodeUri: aws/lambdas/cruddur-messaging-stream
       PackageType: Zip
       Handler: lambda_handler
