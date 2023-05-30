@@ -7,8 +7,8 @@ CONFIG_PATH="$HOME/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/aws
 echo "== deploy"
 # https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-deploy.html
 sam deploy \
-    --template-file $PACKAGED_TEMPLATE_PATH \
-    --config-file $CONFIG_PATH \
+    --template-file "$PACKAGED_TEMPLATE_PATH" \
+    --config-file "$CONFIG_PATH" \
     --stack-name "CrdDdb" \
     --tags group=cruddur-ddb \
     --no-execute-changeset \
