@@ -23,6 +23,10 @@ aws cloudformation package \
     --region "$REGION" \
     --output-template-file "$PACKAGED_PATH"
 
+echo ""
+echo "$PARAMETERS"
+echo ""
+
 aws cloudformation deploy \
     --stack-name "$STACK_NAME" \
     --s3-bucket "$BUCKET" \
@@ -31,5 +35,5 @@ aws cloudformation deploy \
     --template-file "$PACKAGED_PATH" \
     --no-execute-changeset \
     --tags group=cruddur-cicd \
-    --parameter-overrides "$PARAMETERS" \
+    --parameter-overrides ["$PARAMETERS"] \
     --capabilities CAPABILITY_NAMED_IAM

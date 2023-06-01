@@ -12,12 +12,16 @@ Parameters:
     Default: 'lee-treehouse/aws-bootcamp-cruddur-2023'
   ClusterStack:
     Type: String
+    Default: CrdCluster
   ServiceStack:
     Type: String
+    Default: CrdSrvBackendFlask
   ArtifactBucketName:
     Type: String
+    Default: codepipeline-cruddur-artifacts-leentaylor
   BuildSpec:
     Type: String
+    Default: backend-flask/buildspec.yml
 Resources:
   Codebuild:
     # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html
