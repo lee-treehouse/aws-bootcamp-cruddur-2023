@@ -8,7 +8,7 @@ Description: |
 Parameters:
   CertificateArn:
     Type: String
-    Default: arn:aws:acm:us-east-1:690064039948:certificate/598e93b0-4a8f-45f1-b79c-903fbcef70a8
+    Default: arn:aws:acm:us-east-1:690064039948:certificate/a2e4be6b-647a-46b2-8a36-d902428fb87b
   WwwBucketName:
     Type: String
     Default: www.leentaylor.xyz 
