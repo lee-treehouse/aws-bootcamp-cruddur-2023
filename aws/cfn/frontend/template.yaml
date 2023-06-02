@@ -77,8 +77,8 @@ Resources:
     Properties:
       DistributionConfig:
         Aliases:
-          - cruddur.com
-          - www.cruddur.com
+          - leentaylor.xyz
+          - www.leentaylor.xyz
         Comment: Frontend React Js for Cruddur
         Enabled: true
         HttpVersion: http2and3 
