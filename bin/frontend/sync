@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-
+# first static-build then sync
 require 'aws_s3_website_sync'
 require 'dotenv'
 
