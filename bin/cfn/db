@@ -22,5 +22,5 @@ aws cloudformation deploy \
     --template-file "$CFN_PATH" \
     --no-execute-changeset \
     --tags group=cruddur-db \
-    --parameter-overrides ["NetworkingStack=CrdNet" "ClusterStack=CrdCluster" "MasterUsername=cruddurrootx" "MasterUserPassword=tuEE33z2Qvl383"] \
+    --parameter-overrides [NetworkingStack=CrdNet ClusterStack=CrdCluster MasterUsername=cruddurrootx MasterUserPassword=tuEE33z2Qvl383] \
     --capabilities CAPABILITY_NAMED_IAM
