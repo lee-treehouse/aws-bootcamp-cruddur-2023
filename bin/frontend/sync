@@ -3,7 +3,10 @@
 require 'aws_s3_website_sync'
 require 'dotenv'
 
-env_path = "$HOME/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/sync.env"
+env_path = "/Users/leentaylor/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/sync.env"
+
+puts env_path
+
 Dotenv.load(env_path)
 
 puts "== configuration"
