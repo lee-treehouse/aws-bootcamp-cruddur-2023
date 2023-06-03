@@ -1,4 +1,5 @@
 #! /usr/bin/env bash
+# shellcheck disable=SC2086
 set -e # stop the execution of the script if it fails
 
 CFN_PATH="$HOME/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/aws/cfn/db/template.yaml"
@@ -22,5 +23,5 @@ aws cloudformation deploy \
     --template-file "$CFN_PATH" \
     --no-execute-changeset \
     --tags group=cruddur-db \
-    --parameter-overrides [NetworkingStack=CrdNet ClusterStack=CrdCluster MasterUsername=cruddurrootx MasterUserPassword=tuEE33z2Qvl383] \
+    --parameter-overrides [$PARAMETERS] \
     --capabilities CAPABILITY_NAMED_IAM
