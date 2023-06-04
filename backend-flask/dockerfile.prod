@@ -1,18 +1,30 @@
-FROM python:3.10-slim-buster
+FROM 387543059434.dkr.ecr.ca-central-1.amazonaws.com/cruddur-python:3.10-slim-buster
 
-# inside the container
-# If the WORKDIR command is not written in the Dockerfile, it will automatically be created 
-# by the Docker compiler. Hence, it can be said that the command performs mkdir and cd implicitly.
+# [TODO] For debugging, don't leave these in
+#RUN apt-get update -y
+#RUN apt-get install iputils-ping -y
+# -----
+
+# Inside Container
+# make a new folder inside container
 WORKDIR /backend-flask
 
-# copy from outside the container to inside the container
+# Outside Container -> Inside Container
+# this contains the libraries want to install to run the app
 COPY requirements.txt requirements.txt
 
-RUN pip3 install --verbose -r requirements.txt
+# Inside Container
+# Install the python libraries used for the app
+RUN pip3 install -r requirements.txt
 
-# copy everything in the current directory - is it recursive?
-# does this mean copying requirements.txt again? 
+# Outside Container -> Inside Container
+# . means everything in the current directory
+# first period . - /backend-flask (outside container)
+# second period . /backend-flask (inside container)
 COPY . .
 
 EXPOSE ${PORT}
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567", "--no-debug"]
+
+# CMD (Command)
+# python3 -m flask run --host=0.0.0.0 --port=4567
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567", "--no-debug","--no-debugger","--no-reload"]
