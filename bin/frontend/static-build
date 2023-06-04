@@ -1,0 +1,18 @@
+#! /bin/bash
+# shellcheck disable=SC2034
+
+ABS_PATH=$(readlink -f "$0")
+FRONTEND_PATH=$(dirname "$ABS_PATH")
+BIN_PATH=$(dirname "$FRONTEND_PATH")
+PROJECT_PATH=$(dirname "$BIN_PATH")
+FRONTEND_REACT_JS_PATH="$PROJECT_PATH/frontend-react-js"
+
+cd "$FRONTEND_REACT_JS_PATH" || exit
+
+REACT_APP_BACKEND_URL="https://api.leentaylor.xyz" \
+    REACT_APP_AWS_PROJECT_REGION="$AWS_DEFAULT_REGION" \
+    REACT_APP_AWS_COGNITO_REGION="$AWS_DEFAULT_REGION" \
+    REACT_APP_AWS_USER_POOLS_ID="ap-southeast-2_kuTElgT47" \
+    REACT_APP_CLIENT_ID="21u7cgurmcd7jd3er5bfj5s394"
+
+npm run build
