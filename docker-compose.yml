@@ -12,7 +12,7 @@ services:
       - cruddur-net
   frontend-react-js:
     env_file:
-      - frontend-react-js.env
+      - frontend-react-js/.env
     build: ./frontend-react-js
     ports:
       - "3000:3000"

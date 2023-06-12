@@ -18,6 +18,7 @@ def load(app):
   @app.route("/api/message_groups", methods=['GET'])
   @jwt_required()
   def data_message_groups():
+    print("loading message groups for ",g.cognito_user_id)
     model = MessageGroups.run(cognito_user_id=g.cognito_user_id)
     return model_json(model)
 
