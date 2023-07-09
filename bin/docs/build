@@ -1,23 +1,23 @@
 #! /bin/bash
 ABS_PATH=$(readlink -f "$0")
 #echo "$ABS_PATH"
-#/Users/leentaylor/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/bin/docs/build
+#/Users/leentaylor/Developer/aws-bootcamp-cruddur-2023/bin/docs/build
 
 FRONTEND_PATH=$(dirname "$ABS_PATH")
 #echo "$FRONTEND_PATH"
-#/Users/leentaylor/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/bin/docs
+#/Users/leentaylor/Developer/aws-bootcamp-cruddur-2023/bin/docs
 
 BIN_PATH=$(dirname "$FRONTEND_PATH")
 #echo "$BIN_PATH"
-#/Users/leentaylor/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/bin
+#/Users/leentaylor/Developer/aws-bootcamp-cruddur-2023/bin
 
 PROJECT_PATH=$(dirname "$BIN_PATH")
 #echo "$PROJECT_PATH"
-#/Users/leentaylor/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023
+#/Users/leentaylor/Developer/aws-bootcamp-cruddur-2023
 
 DOCS_PATH="$PROJECT_PATH/backend-flask-api-docs"
 #echo "$DOCS_PATH"
-#/Users/leentaylor/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/backend-flask-api-docs
+#/Users/leentaylor/Developer/aws-bootcamp-cruddur-2023/backend-flask-api-docs
 
 docker build \
     -t backend-flask-api-docs \

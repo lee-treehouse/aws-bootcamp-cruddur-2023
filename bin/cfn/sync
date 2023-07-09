@@ -2,8 +2,8 @@
 # shellcheck disable=SC2086
 set -e # stop the execution of the script if it fails
 
-CFN_PATH="$HOME/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/aws/cfn/sync/template.yaml"
-CONFIG_PATH="$HOME/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/aws/cfn/sync/config.toml"
+CFN_PATH="$HOME/Developer/aws-bootcamp-cruddur-2023/aws/cfn/sync/template.yaml"
+CONFIG_PATH="$HOME/Developer/aws-bootcamp-cruddur-2023/aws/cfn/sync/config.toml"
 echo "$CFN_PATH"
 
 cfn-lint "$CFN_PATH"

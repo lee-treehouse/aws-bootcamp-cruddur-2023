@@ -1,9 +1,9 @@
 #! /usr/bin/env bash
 set -e # stop the execution of the script if it fails
 
-CFN_PATH="$HOME/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/aws/cfn/cluster/template.yaml"
+CFN_PATH="$HOME/Developer/aws-bootcamp-cruddur-2023/aws/cfn/cluster/template.yaml"
 
-CONFIG_PATH="$HOME/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/aws/cfn/cluster/config.toml"
+CONFIG_PATH="$HOME/Developer/aws-bootcamp-cruddur-2023/aws/cfn/cluster/config.toml"
 
 echo "$CFN_PATH"
 

@@ -1,7 +1,7 @@
 #! /bin/bash
 set -e
 
-CFN_PATH="$HOME/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/aws/cfn/networking/template.yaml"
+CFN_PATH="$HOME/Developer/aws-bootcamp-cruddur-2023/aws/cfn/networking/template.yaml"
 
 cfn-lint "$CFN_PATH"
 

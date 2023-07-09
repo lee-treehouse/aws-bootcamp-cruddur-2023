@@ -1,9 +1,9 @@
 #! /usr/bin/env bash
 set -e # stop the execution of the script if it fails
 
-FUNC_DIR="$HOME/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/ddb/function/"
-TEMPLATE_PATH="$HOME/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/ddb/template.yaml"
-CONFIG_PATH="$HOME/Developer/tutorials/awsBootcamp/aws-bootcamp-cruddur-2023/ddb/config.toml"
+FUNC_DIR="$HOME/Developer/aws-bootcamp-cruddur-2023/ddb/function/"
+TEMPLATE_PATH="$HOME/Developer/aws-bootcamp-cruddur-2023/ddb/template.yaml"
+CONFIG_PATH="$HOME/Developer/aws-bootcamp-cruddur-2023/ddb/config.toml"
 
 sam validate -t "$TEMPLATE_PATH"
 
